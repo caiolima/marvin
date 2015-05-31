@@ -1,25 +1,27 @@
-/*This file is part of Marvin OS project.
+/*
+ * This file is part of Marvin OS project.
  * 
- *Marvin OS is free software: you can redistribute it and/or modify
- *it under the terms of the GNU General Public License as published by
- *the Free Software Foundation, either version 3 of the License, or
- *(at your option) any later version.
+ * Marvin OS is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * Marvin OS is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with Marvin OS.  If not, see <http://www.gnu.org/licenses/>.
  *
- *Marvin OS is distributed in the hope that it will be useful,
- *but WITHOUT ANY WARRANTY; without even the implied warranty of
- *MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *GNU General Public License for more details.
- *
- *You should have received a copy of the GNU General Public License
- *along with Marvin OS.  If not, see <http://www.gnu.org/licenses/>.
- *
- *  Description: List datastruct implementation
+ *  Description: This file is the implementation of a Double Linked List
+ *               using the <linux/list.h> from Linux Kernel codebase.
  *  Author: Caio Lima
  *  Date: 31 - 05 - 2015
 */
 
-#ifndef LIST_H_
-#define LIST_H_
+#ifndef MARVIN_LIST_H_
+#define MARVIN_LIST_H_
 
 #include <types.h>
 
@@ -566,4 +568,4 @@ static inline void list_splice_tail_init(struct list_head *list,
   n = list_entry(pos->member.next, typeof(*pos), member)
 
 
-#endif /* LIST_H_ */
+#endif /* MARVIN_LIST_H_ */
